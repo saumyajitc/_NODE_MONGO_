@@ -1,0 +1,7 @@
+create database employeedb;
+\c employeedb;
+create table employee (id serial primary key,name varchar(30),sal real);
+create user test with encrypted password 'password';
+grant all privileges on database employeedb to test;
+grant all privileges on table employee to test;
+grant all privileges on sequence employee_id_seq to test;

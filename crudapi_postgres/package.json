@@ -1,0 +1,29 @@
+{
+  "name": "crudapi",
+  "version": "1.0.0",
+  "description": "CRUD Operations using Express, Mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --exec babel-node server.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "Saumyajit",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}

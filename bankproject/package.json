@@ -1,0 +1,29 @@
+{
+  "name": "bankproject",
+  "version": "1.0.0",
+  "description": "This is a demo project using mongoose to create CRUD application for bank accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "bank",
+    "account",
+    "mongoose",
+    "express",
+    "node"
+  ],
+  "author": "Saumyajit",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chai": "^4.4.1",
+    "chai-http": "^4.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mocha": "^10.7.0",
+    "mongoose": "^8.5.2"
+  }
+}

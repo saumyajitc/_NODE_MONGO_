@@ -1,0 +1,55 @@
+MongoDB Install:
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon/
+
+sudo vi /etc/yum.repos.d/mongodb-org-4.4.repo
+
+[mongodb-org-4.4]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/4.4/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
+
+
+sudo yum install -y mongodb-org
+
+sudo systemctl start mongod
+
+sudo systemctl status mongod
+
+sudo systemctl enable mongod
+
+
+Node:
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+. ~/.nvm/nvm.sh
+
+nvm install node
+
+node -v
+
+npm install nodemon -g
+
+GIT:
+
+sudo yum install git
+
+
+CLone and Run Application:
+
+git clone https://github.com/bharaththippireddy/clinicalsapi.git
+
+Run the APP:
+
+cd clinicalsapi/
+
+npm start
+
+
+[
+                'clinicals',
+                {path: 'clinicals', model: "Clinicals"}
+            ]
